@@ -48,7 +48,7 @@ class RecommendationCard extends StatelessWidget {
                   padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-              color: Colors.black.withOpacity(0.3),
+              color: Colors.black.withOpacity(0.4),
             
             ),
                   child: Row(
@@ -63,8 +63,7 @@ class RecommendationCard extends StatelessWidget {
                           Text(
                             location,
                             style: const TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold),
+                                color: Colors.white,),
                           ),
                           Text(
                             date,
@@ -72,7 +71,7 @@ class RecommendationCard extends StatelessWidget {
                           ),
                           Text(
                             userName,
-                            style: const TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
                           ),
                         ],
                       ),
