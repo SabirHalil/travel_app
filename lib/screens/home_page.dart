@@ -72,14 +72,14 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
-        RecommendationCard(
+      const  RecommendationCard(
             imageUrl: 'assets/images/kaputas_plaji.png',
             location: 'Kaputas Beach, Turkey',
             date: '01.01.2024',
             userName: 'Claire Williams',
             userImageUrl: 'assets/images/person3.png',
             likes: '2.2k'),
-                    RecommendationCard(
+      const              RecommendationCard(
             imageUrl: 'assets/images/goreme.png',
             location: 'Goreme, Turkey',
             date: '01.05.2024',

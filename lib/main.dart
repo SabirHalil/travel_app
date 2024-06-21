@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/login_page.dart';
-import 'package:travel_app/main_page.dart';
-import 'package:travel_app/onboarding_page.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:travel_app/screens/login_page.dart';
+import 'package:travel_app/screens/main_page.dart';
+import 'package:travel_app/screens/onboarding_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +13,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Onboarding Slider',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const LoginPage(),
-    );
+    return ResponsiveSizer(builder: (context, orientation, screenType) {
+      return MaterialApp(
+        title: 'Onboarding Slider',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const LoginPage(),
+      );
+    });
   }
 }
