@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:travel_app/core/colors.dart';
+import 'package:travel_app/widgets/custom_button.dart';
 
 class MapPage extends StatefulWidget {
   const MapPage({super.key});
@@ -49,7 +50,7 @@ class _MapPageState extends State<MapPage> {
         const SizedBox(height: 20),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: ElevatedButton(onPressed: () {},style: ButtonStyle(padding: MaterialStatePropertyAll(EdgeInsets.symmetric(vertical: 15)),backgroundColor:MaterialStatePropertyAll(GlobalColors.primaryColor) ) ,child: Text('Let\'s get personal' , style: TextStyle(color: Colors.white, fontSize: 18.sp),)),
+          child: CustomButton(text: 'Let\s get personal', onPressed: (){}),
         ),
       ],
     );

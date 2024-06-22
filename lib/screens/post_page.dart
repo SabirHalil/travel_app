@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:travel_app/widgets/custom_button.dart';
 
 class PostPage extends StatelessWidget {
   const PostPage({super.key});
@@ -69,22 +70,7 @@ class PostPage extends StatelessWidget {
         const  SizedBox(height: 60,),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: ElevatedButton(
-              onPressed: () {
-                // Handle the post action
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
-                minimumSize:const Size(double.infinity, 50),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              child:const Text(
-                'Post',
-                style: TextStyle(fontSize: 18, color: Colors.white),
-              ),
-            ),
+            child: CustomButton(text: 'Post', onPressed: (){})
           )
         ],
       ),

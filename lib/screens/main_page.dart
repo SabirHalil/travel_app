@@ -6,6 +6,7 @@ import 'package:travel_app/screens/home_page.dart';
 import 'package:travel_app/screens/map_page.dart';
 import 'package:travel_app/screens/notification_page.dart';
 import 'package:travel_app/screens/post_page.dart';
+import 'package:travel_app/screens/profile_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -44,7 +45,7 @@ class _MainPageState extends State<MainPage> {
       case 2:
         return const NotificationPage();
       case 3:
-        return const NotificationPage();
+        return ProfilePage();
       case -1:
         return const PostPage();
       default:
