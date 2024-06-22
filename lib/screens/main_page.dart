@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:travel_app/core/colors.dart';
 import 'package:travel_app/screens/home_page.dart';
 import 'package:travel_app/screens/map_page.dart';
+import 'package:travel_app/screens/notification_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -33,7 +34,20 @@ class _MainPageState extends State<MainPage> {
   }
 
   _body() {
-    return _bottomNavIndex == 0 ? HomePage():MapPage();
+
+    switch (_bottomNavIndex) {
+      case 0:
+        return const HomePage();
+      case 1:
+        return const MapPage();
+      case 2:
+        return const NotificationPage();
+      case 3:
+        return const NotificationPage();
+      default:
+        return const NotificationPage();
+    }
+  
   }
 
   _floatingButton() {
